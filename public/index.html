@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Image Classifier</title>
+    <meta
+      name="Image Classifier"
+      content="Classify user provided images using ml5 library."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body>
+    <div className='container'>
+        <header>
+          <h1>Image Classifier</h1> 
+          <div id='controlsDiv'>
+            <input type="file" id="myImage" accept="image/*" />
+            <button id="uploadButton">Upload</button>
+            <button id="classifyButton" disabled >Classify</button>
+          </div>
+          <div id="predictionsDiv"></div>
+          <div id="imgDisplay"></div>
+        </header>
+      </div>
+      <script src="index.js"></script>
+</body>
+
+</html>
